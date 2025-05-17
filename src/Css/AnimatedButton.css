@@ -1,0 +1,21 @@
+.button {
+  white-space: nowrap;
+  display: inline-block;
+  padding: 8px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000;
+  /* background-color: #04AA6D; */
+  border: 1px solid black;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  box-shadow: 0 8px 5px rgb(0, 0, 0); /* shadow below */
+  transform: translateY(-4px); /* move up */
+}
+

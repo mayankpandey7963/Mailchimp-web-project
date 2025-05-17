@@ -1,0 +1,62 @@
+.quickbook-icon {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+  
+.quickbook_mailchimp:hover .quickbook-icon {
+    filter: grayscale(0%);
+}
+  
+.quickbook_mailchimp .quickbooks{
+    color: gray;
+    font-weight: bold;
+}
+
+.quickbook_mailchimp:hover .quickbooks{
+    color: black;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.quickbook_mailchimp .mailchimp{
+    color: gray;
+    font-weight: bold;
+}
+.quickbook_mailchimp:hover .mailchimp{
+    color: black;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.NavDropDown{
+  width: 100%;
+}
+.integrations_img{
+  width: 91px;
+  height:74px;
+  box-shadow:0 0 5px 4px rgb(232, 231, 231);
+}
+
+
+.image_Gallery .integrations_img,
+.image_Gallery .integrations_img img {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.image_Gallery:hover .integrations_img,
+.image_Gallery:hover .integrations_img img {
+  opacity: 0.3;
+}
+
+.image_Gallery .integrations_img:hover,
+.image_Gallery .integrations_img:hover img {
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+

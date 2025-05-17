@@ -1,0 +1,15 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.socialMediaBoxes:hover{
+    background-color: rgb(238, 238, 238);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.socialMediaBoxes:hover .nav-link{
+    text-decoration: underline;
+    transition: 0.2s;
+}
