@@ -11,7 +11,7 @@ import '../Css/MailChimp_Website.css';
 import '../../src/App.css'
 
 // Components
-import AnimatedButton from '../Components/animatedButton';
+import AnimatedButton from '../Components/AnimatedButton';
 import ArrowAnimationEffect from '../Components/ArrowAnimationEffect';
 import Footer from '../Components/Footer';
 import HeaderNavbar from '../Components/HeaderNavbar'
