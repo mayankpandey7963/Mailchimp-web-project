@@ -18,7 +18,7 @@ import { BsGlobe2 } from "react-icons/bs";
 
 
 // Components
-import AnimatedButton from './animatedButton';
+import AnimatedButton from './AnimatedButton';
 import ArrowAnimationEffect from './ArrowAnimationEffect';
 
 
