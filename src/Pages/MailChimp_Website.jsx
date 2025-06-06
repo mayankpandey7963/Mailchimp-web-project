@@ -9,11 +9,11 @@ import '../Css/MailChimp_Website.css';
 import '../../src/App.css'
 
 // Components
+
 import MailchimpNavbar from '../Components/MailchimpNavbar'
-import AnimatedButton from '../Components/animatedButton';
+import AnimatedButton from '../Components/AnimatedButton';
 import ArrowAnimationEffect from '../Components/ArrowAnimationEffect';
 import Footer from '../Components/Footer';
-// import HeaderNavbar from '../Components/HeaderNavbar'
 import IntegrationCard from '../Components/IntegrationCard';
 import InfoCards from '../Components/InfoCards';
 

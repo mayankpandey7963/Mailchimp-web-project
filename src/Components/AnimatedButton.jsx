@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Css/animatedButton.css'
+import '../Css/AnimatedButton.css'
 
 function AnimatedButton({ text = "Click Me", onClick, backgroundColor = "default", width, shadowColor = "black" }) {
   const colorMap = {
