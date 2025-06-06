@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container, Row, Col, NavLink, Nav, Card, CardGroup, Image } from 'react-bootstrap';
+import { Container, Row, Col, Card, Image } from 'react-bootstrap';
 import Dropdown from 'react-bootstrap/Dropdown'; 
 
 // css
@@ -67,7 +67,7 @@ function MailChimp_Webside() {
                                          500
                                         </Dropdown.Toggle>
 
-                                        <Dropdown.Menu style={{maxHeight:'0px', overflowY:'auto'}}>
+                                        <Dropdown.Menu style={{maxHeight:'250px', overflowY:'auto'}}>
                                           {standardPrice.map((price, index) =>(
                                             <Dropdown.Item key={index}>
                                                 {price.toLocaleString()}
