@@ -34,60 +34,69 @@ function Footer() {
             </ol>
 
             <Row className='px-5 pt-5' style={{fontSize:'13px'}}>
-                <Col xs={2}>
-                    <big>Products</big>
-                    <div className="vstack gap-3 pt-3" style={{fontSize:'13px'}}>
-                        <Nav.Link href="#">Why Mailchimp?</Nav.Link>
-                        <Nav.Link eventKey="link-1">Products Updates</Nav.Link>
-                        <Nav.Link eventKey="link-2">Email Marketing</Nav.Link>
-                        <Nav.Link eventKey="link-2">Websites</Nav.Link>
-                        <Nav.Link eventKey="link-2">Transactional Email</Nav.Link>
-                        <Nav.Link eventKey="link-2">How we Compare</Nav.Link>
-                        <Nav.Link eventKey="link-2">GDPR Compliance</Nav.Link>
-                        <Nav.Link eventKey="link-2">Security</Nav.Link>
-                        <Nav.Link eventKey="link-2">Status</Nav.Link>
-                        <Nav.Link eventKey="link-2">Mobile App</Nav.Link>
+                <Col xs={12} sm={6} md={4} lg={3}>
+                    <div className="footer-section d-flex flex-column h-100">
+                        <div className="footer-heading fw-bold mt-3 mb-2">Products</div>
+                        <div className="vstack gap-2 flex-grow-1">
+                          <Nav.Link href="#">Why Mailchimp?</Nav.Link>
+                          <Nav.Link>Product Updates</Nav.Link>
+                          <Nav.Link>Email Marketing</Nav.Link>
+                          <Nav.Link>Websites</Nav.Link>
+                          <Nav.Link>Transactional Email</Nav.Link>
+                          <Nav.Link>How we Compare</Nav.Link>
+                          <Nav.Link>GDPR Compliance</Nav.Link>
+                          <Nav.Link>Security</Nav.Link>
+                          <Nav.Link>Status</Nav.Link>
+                          <Nav.Link>Mobile App</Nav.Link>
+                        </div>
                     </div>
                 </Col>
-                <Col xs={2}>
-                    <big>Resources</big>
-                    <div className="vstack gap-3 pt-3">
+                <Col xs={12} sm={6} md={4} lg={3}>
+                    <div className="footer-section d-flex flex-column h-100">
+                      <div className="footer-heading fw-bold mt-3 mb-2">Resources</div>
+                      <div className="vstack gap-2 flex-grow-1">
                         <Nav.Link eventKey="link-2">Marketing Library</Nav.Link>
                         <Nav.Link eventKey="link-2">Free Marketing Tools</Nav.Link>
                         <Nav.Link eventKey="link-2">Marketing Glossary</Nav.Link>
                         <Nav.Link eventKey="link-2">Integrations Directory</Nav.Link>
+                      </div>
                     </div>
-
                 </Col>
-                <Col xs={2}>
-                    <big>Community</big>
-                   <div className="vstack gap-3 pt-3">
+                <Col xs={12} sm={6} md={4} lg={3}>
+                    <div className="footer-section d-flex flex-column h-100">
+                      <div className="footer-heading fw-bold mt-3 mb-2">Community</div>
+                      <div className="vstack gap-2 flex-grow-1">
                         <Nav.Link eventKey="link-2">Agencies & Freelancers</Nav.Link>
                         <Nav.Link eventKey="link-2">Developers</Nav.Link>
                         <Nav.Link eventKey="link-2">Events</Nav.Link>
-                   </div>
+                      </div>
+                    </div>
                 </Col>
-                <Col xs={2}>
-                    <big>Company</big>
-                   <div className="vstack gap-3 pt-3">
+                <Col xs={12} sm={6} md={4} lg={3}>
+                    <div className="footer-section d-flex flex-column h-100">
+                      <div className="footer-heading fw-bold mt-3 mb-2">Company</div>
+                      <div className="vstack gap-2 flex-grow-1">
                         <Nav.Link eventKey="link-2">Our Story</Nav.Link>
                         <Nav.Link eventKey="link-2">Newsroom</Nav.Link>
                         <Nav.Link eventKey="link-2">Give Where You Live</Nav.Link>
                         <Nav.Link eventKey="link-2">Careers</Nav.Link>
                         <Nav.Link eventKey="link-2">Accessibility</Nav.Link>
-                   </div>
+                      </div>
+                    </div>
                 </Col>
-                <Col xs={2}>
-                    <big>Help</big>
-                    <div className="vstack gap-3 pt-3">
+                <Col xs={12} sm={6} md={4} lg={3}>
+                    <div className="footer-section d-flex flex-column h-100">
+                      <div className="footer-heading fw-bold mt-3 mb-2">Help</div>
+                      <div className="vstack gap-2 flex-grow-1">
                         <Nav.Link eventKey="link-2">Contact Us</Nav.Link>
                         <Nav.Link eventKey="link-2">Hire an Expert</Nav.Link>
                         <Nav.Link eventKey="link-2">Help Center</Nav.Link>
                         <Nav.Link eventKey="link-2">Talk to Sales</Nav.Link>
+                      </div>
                     </div>
                 </Col>
-                <Col xs={2}>
-                    <img className='img-fluid mb-2' src="./MCP.png" alt="" />
+                <Col xs={12} sm={6} md={4} lg={3}>
+                    <img className='img-fluid mt-3 mb-2' src="./MCP.png" alt="" />
                     <small style={{fontFamily:"serif", fontSize:'15px'}} className='pb-5'>Films, podcasts, and original series that celebrate the entrepreneurial spirit.</small>
                     <ArrowAnimationEffect />
                 </Col>
@@ -97,33 +106,31 @@ function Footer() {
 
             <Row>
                 <Col xs={12}>
-                    <div className="intuitTextGroup d-flex justify-content-center">
-                        <Stack direction='horizontal' gap={4}>
-                            <Nav.Link href='#'>INTUIT</Nav.Link>
+                    <div className="intuitTextGroup d-flex flex-column flex-md-row justify-content-center align-items-center gap-2 gap-md-4 px-2">
+                        {/* <Stack direction='horizontal' gap={4}> */}
+                            <Nav.Link href='#' className='fw-bold fs-5'>INTUIT</Nav.Link>
                             <Nav.Link href='#'><FaCheckCircle /> turbotax</Nav.Link>
                             <Nav.Link href='#'> <span className='rounded-circle text-white bg-dark' style={{padding:'3px'}}>ck</span> creditKarma</Nav.Link>
                             <Nav.Link href='#'><img className='img-fluid rounded-circle' width={'17px'} src="./Quickbooks.jpg" alt="" /> quickbooks</Nav.Link>
                             <Nav.Link href='#'>mailchimp</Nav.Link>
-                        </Stack>
+                        {/* </Stack> */}
                     </div>
                 </Col>
                 <Col xs={12}>
-                    <div className="appStore_GoogleStore mt-5 d-flex justify-content-center">
-                        <Stack direction='horizontal' gap={3}>
+                    <div className="appStore_GoogleStore mt-5 gap-2 gap-md-4 d-flex flex-column flex-md-row justify-content-center">
                             <Nav.Link><img className='img-fluid' src="./icon-ios.png" alt="" />    </Nav.Link>
                             <Nav.Link><img className='img-fluid' src="./icon-android.png" alt="" /></Nav.Link>
-                            <Nav.Link><img className='img-fluid ps-5' src="./icon-facebook.png" alt="" /></Nav.Link>
+                            <Nav.Link><img className='img-fluid' src="./icon-facebook.png" alt="" /></Nav.Link>
                             <Nav.Link><img className='img-fluid' src="./icon-twitter.png" alt="" /></Nav.Link>
                             <Nav.Link><img className='img-fluid' src="./icon-instagram.png" alt="" /></Nav.Link>
                             <Nav.Link><img className='img-fluid' src="./icon-linkedin.png" alt="" /></Nav.Link>
                             <Nav.Link><img className='img-fluid' src="./icon-youtube.png" alt="" /></Nav.Link>
                             <Nav.Link><img className='img-fluid' src="./pinterest-logo.png" alt="" /></Nav.Link>
-                            <Nav.Link><img className='img-fluid ps-5' src="./GDPR.png" alt="" /></Nav.Link>
-                        </Stack>
+                            <Nav.Link><img className='img-fluid' src="./GDPR.png" alt="" /></Nav.Link>
                     </div>
                 </Col>
                 <Row className='pt-5'>
-                    <Col xs={2}>
+                    <Col xs={12} sm={6} md={4}>
                         <Nav.Link>
                             <Dropdown className='border border-dark'>
                                 <Dropdown.Toggle className='bg-light border-0 w-100 text-dark' style={{fontSize: "13px"}} id="dropdown-basic"><BsGlobe2/> EN</Dropdown.Toggle>

@@ -7,6 +7,11 @@
 @media (max-height: 576px){
   .premium_priceCard_Div {
     bottom: 80px;
-    margin-bottom: -80px;
+    margin-bottom: -90px;
   }
+}
+.integrated-img{
+  max-height:80px;
+  width: auto;
+  object-fit: contain;
 }
