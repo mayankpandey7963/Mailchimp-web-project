@@ -129,8 +129,8 @@ function Footer() {
                             <Nav.Link><img className='img-fluid' src="./GDPR.png" alt="" /></Nav.Link>
                     </div>
                 </Col>
-                <Row className='pt-5'>
-                    <Col xs={12} sm={6} md={4}>
+                <Row className='pt-5 d-flex justify-content-center'>
+                    <Col xs={12} sm={6} md={2}>
                         <Nav.Link>
                             <Dropdown className='border border-dark'>
                                 <Dropdown.Toggle className='bg-light border-0 w-100 text-dark' style={{fontSize: "13px"}} id="dropdown-basic"><BsGlobe2/> EN</Dropdown.Toggle>

@@ -1,10 +1,5 @@
 import React,{useState} from 'react';
-import {Container} from 'react-bootstrap';
-import {Col, Row} from 'react-bootstrap'
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Dropdown from 'react-bootstrap/Dropdown';
-import Stack from 'react-bootstrap/Stack';
+import {Col, Row, Container, Nav, Navbar, Dropdown, Stack, Image} from 'react-bootstrap'
 
 // css
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,6 +20,105 @@ import ArrowAnimationEffect from './ArrowAnimationEffect';
 function MailchimpNavbar() {
 
   const [activeMenu, setActiveMenu] = useState(null);
+
+  const solutions_services = [
+    {
+      src: "./email_marketing_24.png",
+      alt: "email marketing",
+      title: "Email Marketing",
+      desc: "Send Personalized emails that convert."
+    },
+    {
+      src: "./marketing_automations_24.png",
+      alt: "marketing automation",
+      title: "Marketing Automation",
+      desc: "Deliver the right message at the right time."
+    },
+    {
+      src: "./Brain.png",
+      alt: "ai marketing tools",
+      title: "AI Marketing Tools",
+      desc: "Say hello to your AI growth assistant."
+    },
+    {
+      src: "./websites_domains_24.png",
+      alt: "website domain",
+      title: "Website Domain",
+      desc: "Create your branded web presence."
+    },
+    {
+      src: "./reporting_analytics_24.png",
+      alt: "reporting and analytics",
+      title: "Reporting and Analytics",
+      desc: "Track sales & campaign performance"
+    },
+    {
+      src: "./content_creation_24.png",
+      alt: "content creation tools",
+      title: "content creation tools",
+      desc: "Build content that captivates and converts."
+    },
+    {
+      src: "./social_media_marketing_24.png",
+      alt: "social media marketing",
+      title: "social media marketing",
+      desc: "Amplify the conversation across multiple channels"
+    },
+    {
+      src: "./audience_management_24.png",
+      alt: "Audience management",
+      title: "Audience management",
+      desc: "Target and segment customers"
+    },
+    {
+      src: "./magnet_export.png",
+      alt: "Lead generation platform",
+      title: "Lead generation platform",
+      desc: "Grow your audience with high-quality leads."
+    },
+    {
+      src: "./templates_24.png",
+      alt: "Templates",
+      title: "Templates",
+      desc: "Customize pre-designed layouts."
+    },
+    {
+      src: "./marketing-crm__2_.png",
+      alt: "See all features",
+      title: "See all features",
+      desc: "See all our products offerings in one place."
+    },
+
+  ]
+  const solutions_servicesLinks = [
+    {
+      title: "E-commerce and retail"
+    },
+    {
+      title: "Mobile and web apps"
+    },
+    {
+      title: "Start-ups"
+    },
+    {
+      title: "Agencies and freelancers"
+    },
+    {
+      title: "Developers"
+    },
+    {
+      title: "PROFESSIONAL SERVICES"
+    },
+    {
+      title: "Hire an Expert"
+    },
+    {
+      title: "Personalized onboarding"
+    },
+    {
+      title: "Customer success"
+    }
+  ]
 
   return (
     <>
@@ -58,7 +152,7 @@ function MailchimpNavbar() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="me-0">
-            <Nav className="align-items-center">
+            <Nav className="align-items-center" style={{fontSize:'12px'}}>
 
               <Nav.Link onMouseEnter={() => setActiveMenu("solutions")} >Solutions and Services </Nav.Link>
 
@@ -108,101 +202,45 @@ function MailchimpNavbar() {
                       <h2>Solutions and Services</h2>
                       <ArrowAnimationEffect text="See what's new"/>
                     </div>
-                    
                   </Col>
-                  <Col xs={4} className='d-flex py-2 socialMediaBoxes'>
-                    <img className='img-fluid' src="./email_marketing_24.png" style={{width:'1.3rem', height:'1.3rem'}} alt="email_marketing_24"/>
-                    <div className="socialMediaTexts ps-3">
-                      <Nav.Link href=''><b>Email marketing</b></Nav.Link>
-                      <span>Send Personalized emails that convert.</span>
-                    </div>
-                  </Col>
-                  <Col xs={4} className='d-flex py-2 socialMediaBoxes'>
-                      <img src="./marketing_automations_24.png" style={{width:'1.3rem', height:'1.3rem'}} alt="marketing_automations_24" />
+
+                  {(solutions_services.map((element, index) => (
+                    <Col xs={12} sm={6} md={4} key={index} className='d-flex py-2 socialMediaBoxes'>
+
+                      <Image fluid src={element.src} alt={element.alt} style={{width:'1.3rem', height:'1.3rem'}} />
                       <div className="socialMediaTexts ps-3">
-                        <Nav.Link href=''><b>Marketing automations</b></Nav.Link>
-                        <span>Deliver the right message at the right time.</span>
+                        <Nav.Link href='#'> <h6>{element.title}</h6></Nav.Link>
+                        <p>{element.desc}</p>
                       </div>
-                  </Col>
-                  <Col xs={4} className='d-flex py-2 socialMediaBoxes'>
-                      <img src="./Brain.png" style={{width:'1.3rem', height:'1.3rem'}} alt="Brain" />
-                      <div className="socialMediaTexts ps-3">
-                          <Nav.Link href=''><b>AI marketing tools</b></Nav.Link>
-                          <span>Say hello to your AI growth assistant.</span>
-                      </div>
-                  </Col>
-                  <Col xs={4} className='d-flex py-2 socialMediaBoxes'>
-                      <img src="./websites_domains_24.png" style={{width:'1.3rem', height:'1.3rem'}} alt="websites_domains_24" />
-                      <div className="socialMediaTexts ps-3">
-                          <Nav.Link href=''><b>Website</b></Nav.Link>
-                          <span>Create your branded web presence.</span>
-                      </div>
-                  </Col>
-                  <Col xs={4} className='d-flex py-2 socialMediaBoxes'>
-                      <img src="./reporting_analytics_24.png" style={{width:'1.3rem', height:'1.3rem'}} alt="reporting_analytics_24" />
-                      <div className="socialMediaTexts ps-3">
-                          <Nav.Link href=''><b>Reporting & analytics</b></Nav.Link>
-                          <span>.</span>Track sales & campaign performance
-                      </div>
-                  </Col>
-                  <Col xs={4} className='d-flex py-2 socialMediaBoxes'>
-                      <img src="./content_creation_24.png" style={{width:'1.3rem', height:'1.3rem'}} alt="content_creation_24" />
-                      <div className="socialMediaTexts ps-3">
-                          <Nav.Link href=''><b>Content creation tools</b></Nav.Link>
-                          <span>Build content that captivates and converts. </span>
-                      </div>
-                  </Col>
-                  <Col xs={4} className='d-flex py-2 socialMediaBoxes'>
-                      <img src="./social_media_marketing_24.png" style={{width:'1.3rem', height:'1.3rem'}} alt="social_media_marketing_24" />
-                      <div className="socialMediaTexts ps-3">
-                          <Nav.Link href=''><b>Social media marketing</b></Nav.Link>
-                          <span>Amplify the conversation across multiple channels</span>
-                      </div>
-                  </Col>
-                  <Col xs={4} className='d-flex py-2 socialMediaBoxes'>
-                      <img src="./audience_management_24.png" style={{width:'1.3rem', height:'1.3rem'}} alt="audience_management_24" />
-                      <div className="socialMediaTexts ps-3">
-                          <Nav.Link href=''><b>Audience management</b></Nav.Link>
-                          <span>Target and segment customers</span>
-                      </div>
-                  </Col>
-                  <Col xs={4} className='d-flex py-2 socialMediaBoxes'>
-                      <img src="./magnet_export.png" style={{width:'1.3rem', height:'1.3rem'}} alt="magnet_export" />
-                      <div className="socialMediaTexts ps-3">
-                          <Nav.Link href=''><b>Lead generation platform</b></Nav.Link>
-                          <span>Grow your audience with high-quality leads.</span>
-                      </div>
-                  </Col>
-                  <Col xs={4} className='d-flex py-2 socialMediaBoxes'>
-                      <img src="./templates_24.png" style={{width:'1.3rem', height:'1.3rem'}} alt="templates_24" />
-                      <div className="socialMediaTexts ps-3">
-                          <Nav.Link href=''><b>Templates</b></Nav.Link>
-                          <span>Customize pre-designed layouts.</span>
-                      </div>
-                  </Col>
-                  <Col xs={4} className='d-flex py-2 socialMediaBoxes'>
-                      <img src="./marketing-crm__2_.png" style={{width:'1.3rem', height:'1.3rem'}} alt="marketing-crm__2_" />
-                      <div className="socialMediaTexts ps-3">
-                          <Nav.Link href=''><b>See all features</b></Nav.Link>
-                          <span>See all our products offerings in one place.</span>
-                      </div>
-                  </Col>
+
+                    </Col>
+                  )))}
                 </Row>
               </Col>
 
-              <Col xs={4} className='vstack gap-2 p-5' style={{backgroundColor:'#F6F6F4', fontSize:'13px', textDecoration:'none'}}>
+              <Col
+                xs={4}
+                className="vstack gap-2 p-5"
+                style={{
+                  backgroundColor: '#F6F6F4',
+                  fontSize: '13px'
+                }}
+              >
                 <h6>FOR YOUR INDUSTRY</h6>
-                <Nav.Link className='text-decoration-none' href="#">E-commerce and retail</Nav.Link>
-                <Nav.Link className='text-decoration-none' href='#'>Mobile and web apps</Nav.Link>
-                <Nav.Link className='text-decoration-none' href='#'>Start-ups</Nav.Link>
-                <Nav.Link className='text-decoration-none' href='#'>Agencies and freelancers</Nav.Link>
-                <Nav.Link className='text-decoration-none' href='#'>Developers</Nav.Link>
-
-                <h6 class className='text-decoration-none'Name='pt-4'>PROFESSIONAL SERVICES</h6>
-                <Nav.Link className='text-decoration-none' href='#'>Hire an Expert</Nav.Link>
-                <Nav.Link className='text-decoration-none' href='#'>Personalized onboarding</Nav.Link>
-                <Nav.Link className='text-decoration-none' href='#'>Customer success</Nav.Link>
+              
+                {solutions_servicesLinks.map((element, index) => (
+                  <Nav.Link
+                    href={element.link || '#'}
+                    style={{ textDecoration: 'none', color: 'black' }}
+                    key={index}
+                  >
+                    {element.title}
+                  </Nav.Link>
+                ))}
               </Col>
+
+
+             
               
             </>
           )}

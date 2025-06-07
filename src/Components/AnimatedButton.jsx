@@ -17,7 +17,7 @@ function AnimatedButton({ text = "Click Me", onClick, backgroundColor = "default
       <button 
         className={btnClass}
         onClick={onClick}
-        style={{ backgroundColor: colorMap[backgroundColor], width: width || 'auto' }}
+        style={{ backgroundColor: colorMap[backgroundColor], width: width || 'auto',  }}
         onMouseEnter={(e) => {
         e.target.style.boxShadow = `0 7px 0 ${colorMap[shadowColor] || shadowColor}`;
         e.target.style.transform = 'translateY(-9px)';

@@ -9,22 +9,22 @@ function InfoCards() {
 
     const dataCard = [
         {
-            src: "./Integrations.png",
-            alt: "integrations",
-            title: "300 + app integrations",
-            desc: "Connect you favourite apps to send more targeted campaigns."
+          src: "./Integrations.png",
+          alt: "integrations",
+          title: "300 + app integrations",
+          desc: "Connect you favourite apps to send more targeted campaigns."
         },
         {
-            src: "./Support.png",
-            alt: "hand-one support",
-            title: "Hands-one support",
-            desc: "Get help onboarding within your first 30 days at no additional cost."
+          src: "./Support.png",
+          alt: "hand-one support",
+          title: "Hands-one support",
+          desc: "Get help onboarding within your first 30 days at no additional cost."
         },
         {
-            src: "./12_million_businesses.png",
-            alt: "12_million_businesses",
-            title: "12M + business use MailChimp",
-            desc: "Learn from our millions of users worldwide. You'll be in good company."
+          src: "./12_million_businesses.png",
+          alt: "12_million_businesses",
+          title: "12M + business use MailChimp",
+          desc: "Learn from our millions of users worldwide. You'll be in good company."
         },
     ]
   return (
