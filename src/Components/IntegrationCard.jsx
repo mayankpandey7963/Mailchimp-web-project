@@ -65,19 +65,27 @@ function IntegrationCard() {
   return (
     <div>
 
-        <Row className='p-5'>
-          <h1>Bring in more data, drive more <br /> growth with our integrations</h1>
+        <Row className='px-3 px-md-5 py-4'>
+          <Col xs={12} className='mb-4 text-center text-md-start'>
+            <h1>Bring in more data, drive more <br /> growth with our integrations</h1>
+          </Col>
+          
           {integrations.map(({ src, alt, title, desc }, idx) => (
-            <Col key={idx} xs={12} sm={6} md={4} className='d-flex flex-column flex-md-row py-4 socialMediaBoxes'>
-              <Image fluid className='integrated-img' src={src} alt={alt} />
-              <div className="socialMediaTexts ps-3">
-                <Nav.Link href='#'><b style={{fontSize:'14px', fontFamily:'sans-serif'}}>{title}</b></Nav.Link>
-                <span style={{fontSize:'13px', color:'grey'}}>{desc}</span>
+            <Col key={idx} xs={12} sm={6} md={4} className='py-3'>
+              <div className='d-flex flex-column flex-md-row gap-3 align-items-start'>
+                <Image fluid className='integrated-img' src={src} alt={alt} style={{ maxWidth: '60px' }} />
+          
+                <div className="socialMediaTexts ps-0 ps-md-2">
+                  <Nav.Link href='#'>
+                    <strong style={{ fontSize: '14px', fontFamily: 'sans-serif' }}>{title}</strong>
+                  </Nav.Link>
+                  <span style={{ fontSize: '13px', color: 'grey' }}>{desc}</span>
+                </div>
               </div>
             </Col>
           ))}
-          
         </Row>
+
       
     </div>
   )

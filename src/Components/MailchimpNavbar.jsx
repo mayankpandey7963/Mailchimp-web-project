@@ -90,6 +90,7 @@ function MailchimpNavbar() {
     },
 
   ]
+
   const solutions_servicesLinks = [
     {
       title: "E-commerce and retail"
@@ -120,19 +121,86 @@ function MailchimpNavbar() {
     }
   ]
 
+
+  const integrationsData = [
+    {
+      src: './Shopify_icon.png',
+      alt: 'Shopify_icon'
+    },
+    {
+      src: './Logo_Woo_color.png',
+      alt: 'Logo_Woo_color'
+    },
+    {
+      src: './Canva_icon.png',
+      alt: 'Canva_icon'
+    },
+    {
+      src: './Zapier_icon.png',
+      alt: 'Zapier_icon'
+    },
+    {
+      src: './Square_icon.png',
+      alt: 'Square_icon'
+    },
+    {
+      src: './Wix_icon.png',
+      alt: 'Wix_icon'
+    },
+    {
+      src: './Squarespace_icon.png',
+      alt: 'Squarespace_icon'
+    },
+    {
+      src: './Stripe_icon.png',
+      alt: 'Stripe_icon'
+    },
+    {
+      src: './Salesforce_icon.png',
+      alt: 'Salesforce_icon'
+    },
+    {
+      src: './LinkedIn_icon.png',
+      alt: 'LinkedIn_icon'
+    },
+    {
+      src: './Wordpress_icon.png',
+      alt: 'Wordpress_icon'
+    },
+    {
+      src: './Facebook_icon.png',
+      alt: 'Facebook_icon'
+    }
+  ]
+
+
+
   return (
     <>
     {/* quickbook_mailchimp icon */}
-    <Container fluid className='border border-dark d-flex p-1 ps-4' style={{backgroundColor: '#f2f2f2'}}>
-        <strong className='text-secondary'>INTUIT</strong>
-        <span className='quickbook_mailchimp ps-2'>
-          <img className='quickbook-icon me-1 rounded-circle' src="/Quickbooks.jpg" width={15} height={15} alt="Quickbooks" />
-          <small className='quickbooks'>quickbooks</small>
-        </span>
-        <span className='quickbook_mailchimp ps-2'>
-          <small className='mailchimp'>mailchimp</small>
-        </span>
+    <Container fluid className='border border-dark py-2 px-3' style={{ backgroundColor: '#f2f2f2' }}>
+      <Row className='align-items-center flex-wrap'>
+        <Col xs='12' sm='auto' className='mb-1 mb-sm-0'>
+          <strong className='text-secondary'>INTUIT</strong>
+        </Col>
+      
+        <Col xs='12' sm='auto' className='d-flex align-items-center mb-1 mb-sm-0'>
+          <img
+            className='me-2 rounded-circle'
+            src='/Quickbooks.jpg'
+            width={18}
+            height={18}
+            alt='Quickbooks'
+          />
+          <small className='text-muted'>quickbooks</small>
+        </Col>
+      
+        <Col xs='12' sm='auto'>
+          <small className='text-muted'>mailchimp</small>
+        </Col>
+      </Row>
     </Container>
+
 
     
     <Container fluid className='bg-dark'>
@@ -152,7 +220,7 @@ function MailchimpNavbar() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="me-0">
-            <Nav className="align-items-center" style={{fontSize:'12px'}}>
+            <Nav className="align-items-center" >
 
               <Nav.Link onMouseEnter={() => setActiveMenu("solutions")} >Solutions and Services </Nav.Link>
 
@@ -258,116 +326,33 @@ function MailchimpNavbar() {
                   </Col>
                   <Col xs={7}>
                     <div className="image_Gallery m-2">
-                      <Row className='mb-3'>
-                       <Stack direction="horizontal" gap={3}>
-                          <Col xs={3} className='integrations_img d-flex justify-content-center align-items-center rounded'><img className='img-fluid p-2' width={53} height={53} src="./Shopify_icon.png" alt="Shopify_icon" /></Col>
-
-                          <Col xs={3} className='integrations_img d-flex justify-content-center align-items-center rounded'>
-                            <img 
-                            className='img-fluid p-2'
-                            width={53}
-                            height={53}
-                            src="./Logo_Woo_color.png"
-                            alt="Logo_Woo_color" />
+                      <Row className='g-3'>
+                          {integrationsData.map((element, index) => (
+                          <Col
+                            xs={6}
+                            sm={4}
+                            md={3}
+                            key={index}
+                            className='d-flex justify-content-center align-items-center'
+                          >
+                            <div
+                              className='integrations_img rounded shadow-sm p-2 d-flex justify-content-center align-items-center'
+                              style={{
+                                width: '100%',
+                                height: '90px',
+                                backgroundColor: '#fff'
+                              }}
+                            >
+                              <img
+                                className='img-fluid'
+                                width={53}
+                                height={53}
+                                src={element.src}
+                                alt={element.alt}
+                              />
+                            </div>
                           </Col>
-
-                          <Col xs={3} className='integrations_img d-flex justify-content-center align-items-center rounded'>
-                            <img 
-                            className='img-fluid p-2'
-                            width={53}
-                            height={53}
-                            src="./Canva_icon.png"
-                            alt="Canva_icon" />
-                          </Col>
-
-                          <Col xs={3} className='integrations_img d-flex justify-content-center align-items-center rounded'>
-                            <img
-                            className='img-fluid p-2'
-                            width={53}
-                            height={53}
-                            src="./Zapier_icon.png"
-                            alt="Zapier_icon" /></Col>
-                       </Stack>
-                      </Row>
-
-                      <Row className='mb-3'>
-                        <Stack direction="horizontal" gap={3}>
-                          <Col xs={3} className='integrations_img d-flex justify-content-center align-items-center rounded'>
-                            <img
-                            className='img-fluid p-2'
-                            width={53}
-                            height={53}
-                            src="./Square_icon.png"
-                            alt="Square_icon" />
-                          </Col>
-
-                          <Col xs={3} className='integrations_img d-flex justify-content-center align-items-center rounded'>
-                            <img
-                            className='img-fluid p-2'
-                            width={53}
-                            height={53}
-                            src="./Wix_icon.png"
-                            alt="Wix_icon" />
-                          </Col>
-
-                          <Col xs={3} className='integrations_img d-flex justify-content-center align-items-center rounded'>
-                            <img
-                            className='img-fluid p-2'
-                            width={53}
-                            height={53}
-                            src="./Squarespace_icon.png"
-                            alt="Squarespace_icon" />
-                          </Col>
-
-                          <Col xs={3} className='integrations_img d-flex justify-content-center align-items-center rounded'>
-                            <img
-                            className='img-fluid p-2'
-                            width={53}
-                            height={53}
-                            src="./Stripe_icon.png"
-                            alt="Stripe_icon" />
-                          </Col>
-                        </Stack>
-                      </Row>
-
-                      <Row>
-                        <Stack direction="horizontal" gap={3}>
-                          <Col xs={3} className='integrations_img d-flex justify-content-center align-items-center rounded'>
-                            <img
-                            className='img-fluid p-2'
-                            width={53}
-                            height={53}
-                            src="./Salesforce_icon.png"
-                            alt="Salesforce_icon" />
-                          </Col>
-
-                          <Col xs={3} className='integrations_img d-flex justify-content-center align-items-center rounded'>
-                            <img
-                            className='img-fluid p-2'
-                            width={53}
-                            height={53}
-                            src="./LinkedIn_icon.png"
-                            alt="Linkedin_icon" />
-                          </Col>
-
-                          <Col xs={3} className='integrations_img d-flex justify-content-center align-items-center rounded'>
-                            <img
-                            className='img-fluid p-2'
-                            width={53}
-                            height={53}
-                            src="./Wordpress_icon.png"
-                            alt="Wordpress_icon" />
-                          </Col>
-
-                          <Col xs={3} className='integrations_img d-flex justify-content-center align-items-center rounded'>
-                            <img
-                            className='img-fluid p-2'
-                            width={53}
-                            height={53}
-                            src="./Facebook_icon.png"
-                            alt="Facebook_icon" />
-                          </Col>
-                        </Stack>
+                        ))}
                       </Row>
                     </div>
                   </Col>
